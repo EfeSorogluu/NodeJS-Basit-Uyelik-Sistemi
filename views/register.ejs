@@ -1,0 +1,24 @@
+<%- include('header',{
+    title:'Kayıt Ol'
+}); -%>
+
+<div class="container">
+    <h1>Kayıt Ol</h1>
+    <form action="" method="POST">
+        <label for="user_name">İsim</label>
+        <input type="text" class="input" name="_name" id="user_name" placeholder="İsminizi girin">
+        <label for="user_email">E-Posta</label>
+        <input type="email" class="input" name="_email" id="user_email" placeholder="E-Postanızı girin">
+        <label for="user_pass">Şifre</label>
+        <input type="password" class="input" name="_password" id="user_pass" placeholder="Şifrenizi girin">
+        <% if(typeof msg != 'undefined'){ %>
+        <div class="success-msg"><%= msg %></div><% }
+        if(typeof error !== 'undefined'){ %>
+        <div class="err-msg"><%= error %></div><% } %>
+        <input type="submit" value="Kayıt Ol">
+        <div class="link"><a href="./login">Giriş Yap</a></div>
+    </form>
+</div>
+
+<%- include('footer'); -%>
+
