@@ -4,7 +4,7 @@ NodeJS ile Basit Üyelik Sistemini incelemek ve kullanmak istiyorsanız indirip 
 
 Sunucu portu varsayılan olarak (8080) portuna ayarlıdır.
 
-## Nasıl Kurulur*?
+## Nasıl Kurulur?
 
 1- npm i komutu ile modüllerimizi yüklüyoruz,<br>
 2- dbConnect.js dosyasındaki bilgileri kendinimize göre düzenliyoruz,<br>
